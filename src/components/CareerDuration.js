@@ -4,7 +4,7 @@ import "@pqina/flip/dist/flip.min.css";
 import dayjs from "dayjs";
 
 class Flip extends React.Component {
-  constructor(props) {
+  constructor (props) {
     super(props);
     this._tickRef = React.createRef();
   }
@@ -36,7 +36,7 @@ const DurationItem = ({ text, value }) => {
   return (
     <div className="flex flex-col items-center w-fit">
       <Flip value={value} />
-      <div className="text-[2px] text-gray-400">{text}</div>
+      <div className="text-xs text-gray-400">{text}</div>
     </div>
   );
 };
